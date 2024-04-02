@@ -1,5 +1,5 @@
 {
-    "name": "christian71-stack/kaufland-de_seller_api_v_2",
+    "name": "christian71-stack/kaufland-de_seller_api_v2",
     "description": "",
     "keywords": [
         "swagger",
@@ -21,7 +21,7 @@
         "ext-curl": "*",
         "ext-json": "*",
         "ext-mbstring": "*",
-        "guzzlehttp/guzzle": "^6.3",
+        "guzzlehttp/guzzle": "^7.3",
         "guzzlehttp/psr7": "^1.7 || ^2.0"
     },
     "require-dev": {
@@ -29,9 +29,9 @@
         "friendsofphp/php-cs-fixer": "^3.5"
     },
     "autoload": {
-        "psr-4": { "Cbdesk\\Kauflandv2\\Api\\" : "lib/" }
+        "psr-4": { "Kaufland\\Seller\\" : "lib/" }
     },
     "autoload-dev": {
-        "psr-4": { "Cbdesk\\Kauflandv2\\Api\\" : "test/" }
+        "psr-4": { "Kaufland\\Seller\\" : "test/" }
     }
 }

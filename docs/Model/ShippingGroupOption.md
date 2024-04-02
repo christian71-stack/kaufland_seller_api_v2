@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name** | [**\Cbdesk\Kauflandv2\Api\Model\SellerApiShippingGroupRegionOptionNameEnum**](SellerApiShippingGroupRegionOptionNameEnum.md) |  | 
+**name** | [**\Kaufland\Seller\Model\SellerApiShippingGroupRegionOptionNameEnum**](SellerApiShippingGroupRegionOptionNameEnum.md) |  | 
 **cost_first** | **int** | Shipping cost for the first item of this shipping group. | 
 **cost_next** | **int** | Shipping cost of all further items of this shipping group. | 
 **cost_max** | **int** | Maximum shipping cost | 

@@ -3,9 +3,9 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id_invoice** | [**\Cbdesk\Kauflandv2\Api\Model\LongInteger**](LongInteger.md) |  | 
+**id_invoice** | [**\Kaufland\Seller\Model\LongInteger**](LongInteger.md) |  | 
 **id_order** | **string** |  | 
-**storefront** | [**\Cbdesk\Kauflandv2\Api\Model\Storefront**](Storefront.md) |  | 
+**storefront** | [**\Kaufland\Seller\Model\Storefront**](Storefront.md) |  | 
 **is_marketplace_deemed_supplier** | **bool** |  | 
 **original_name** | **string** |  | 
 **mime_type** | **string** |  | 
