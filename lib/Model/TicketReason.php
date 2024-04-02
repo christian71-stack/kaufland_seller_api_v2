@@ -54,11 +54,11 @@ class TicketReason
     public static function getAllowableEnumValues()
     {
         return [
-            self::PRODUCT_NOT_AS_DESCRIBED
-            self::PRODUCT_DEFECT
-            self::PRODUCT_NOT_DELIVERED
-            self::PRODUCT_RETURN
-            self::CONTACT_OTHER
+            self::PRODUCT_NOT_AS_DESCRIBED,
+            self::PRODUCT_DEFECT,
+            self::PRODUCT_NOT_DELIVERED,
+            self::PRODUCT_RETURN,
+            self::CONTACT_OTHER,
         ];
     }
 }

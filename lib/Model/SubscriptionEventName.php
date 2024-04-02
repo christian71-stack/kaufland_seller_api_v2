@@ -63,20 +63,20 @@ class SubscriptionEventName
     public static function getAllowableEnumValues()
     {
         return [
-            self::ORDER_NEW
-            self::ORDER_UNIT_NEW
-            self::ORDER_UNIT_STATUS_CHANGED
-            self::ITEM_CHANGED
-            self::CATEGORY_CHANGED
-            self::RETURN_NEW
-            self::RETURN_STATUS_CHANGED
-            self::RETURN_UNIT_STATUS_CHANGED
-            self::ITEM_UNIT_NEW
-            self::ITEM_UNIT_CHANGED
-            self::ITEM_UNIT_DELETED
-            self::ITEM_UNIT_OUT_OF_STOCK
-            self::ITEM_UNIT_NOT_AVAILABLE
-            self::ITEM_UNIT_AVAILABLE
+            self::ORDER_NEW,
+            self::ORDER_UNIT_NEW,
+            self::ORDER_UNIT_STATUS_CHANGED,
+            self::ITEM_CHANGED,
+            self::CATEGORY_CHANGED,
+            self::RETURN_NEW,
+            self::RETURN_STATUS_CHANGED,
+            self::RETURN_UNIT_STATUS_CHANGED,
+            self::ITEM_UNIT_NEW,
+            self::ITEM_UNIT_CHANGED,
+            self::ITEM_UNIT_DELETED,
+            self::ITEM_UNIT_OUT_OF_STOCK,
+            self::ITEM_UNIT_NOT_AVAILABLE,
+            self::ITEM_UNIT_AVAILABLE,
         ];
     }
 }

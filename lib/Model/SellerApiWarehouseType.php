@@ -51,8 +51,8 @@ class SellerApiWarehouseType
     public static function getAllowableEnumValues()
     {
         return [
-            self::NORMAL
-            self::DROPSHIPMENT
+            self::NORMAL,
+            self::DROPSHIPMENT,
         ];
     }
 }

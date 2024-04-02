@@ -52,9 +52,9 @@ class Currency
     public static function getAllowableEnumValues()
     {
         return [
-            self::EUR
-            self::CZK
-            self::PLN
+            self::EUR,
+            self::CZK,
+            self::PLN,
         ];
     }
 }

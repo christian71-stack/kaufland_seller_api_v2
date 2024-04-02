@@ -54,10 +54,10 @@ class TicketStatus
     public static function getAllowableEnumValues()
     {
         return [
-            self::OPENED
-            self::BUYER_CLOSED
-            self::SELLER_CLOSED
-            self::BOTH_CLOSED
+            self::OPENED,
+            self::BUYER_CLOSED,
+            self::SELLER_CLOSED,
+            self::BOTH_CLOSED,
             self::CUSTOMER_SERVICE_CLOSED_FINAL
         ];
     }

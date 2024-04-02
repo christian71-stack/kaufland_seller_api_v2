@@ -57,13 +57,13 @@ class OrderUnitRefundReason
     public static function getAllowableEnumValues()
     {
         return [
-            self::DELIVERY_DAMAGE
-            self::DELIVERY_DELAY
-            self::INCOMPLETE_DELIVERY
-            self::INCORRECT_DELIVERY
-            self::REFUND_POSTAGE_FEE
-            self::DEFECT
-            self::OTHER_REFUND
+            self::DELIVERY_DAMAGE,
+            self::DELIVERY_DELAY,
+            self::INCOMPLETE_DELIVERY,
+            self::INCORRECT_DELIVERY,
+            self::REFUND_POSTAGE_FEE,
+            self::DEFECT,
+            self::OTHER_REFUND,
             self::REFUND_RETURN_POSTAGE_FEE
         ];
     }

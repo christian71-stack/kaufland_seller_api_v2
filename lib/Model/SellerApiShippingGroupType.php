@@ -51,8 +51,8 @@ class SellerApiShippingGroupType
     public static function getAllowableEnumValues()
     {
         return [
-            self::PACKAGE
-            self::HAULER
+            self::PACKAGE,
+            self::HAULER,
         ];
     }
 }

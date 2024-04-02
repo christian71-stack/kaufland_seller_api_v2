@@ -52,9 +52,9 @@ class UnitStatuses
     public static function getAllowableEnumValues()
     {
         return [
-            self::INCOMPLETE
-            self::AVAILABLE
-            self::ONHOLD
+            self::INCOMPLETE,
+            self::AVAILABLE,
+            self::ONHOLD,
         ];
     }
 }

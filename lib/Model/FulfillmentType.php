@@ -51,8 +51,8 @@ class FulfillmentType
     public static function getAllowableEnumValues()
     {
         return [
-            self::KAUFLAND
-            self::MERCHANT
+            self::KAUFLAND,
+            self::MERCHANT,
         ];
     }
 }

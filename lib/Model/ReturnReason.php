@@ -61,17 +61,17 @@ class ReturnReason
     public static function getAllowableEnumValues()
     {
         return [
-            self::ACCIDENTALLY_ORDERED
-            self::BAD_QUALITY
-            self::BETTER_PRICE
-            self::DEFECT
-            self::DELIVERED_DAMAGED
-            self::DISLIKE
-            self::MISLEADING_DESCRIPTION
-            self::MISSING_PARTS
-            self::NO_REASON
-            self::TOO_LATE
-            self::WRONG_ARTICLE
+            self::ACCIDENTALLY_ORDERED,
+            self::BAD_QUALITY,
+            self::BETTER_PRICE,
+            self::DEFECT,
+            self::DELIVERED_DAMAGED,
+            self::DISLIKE,
+            self::MISLEADING_DESCRIPTION,
+            self::MISSING_PARTS,
+            self::NO_REASON,
+            self::TOO_LATE,
+            self::WRONG_ARTICLE,
             self::WRONG_SIZE
         ];
     }
