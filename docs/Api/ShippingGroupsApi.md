@@ -1,4 +1,4 @@
-# Cbdesk\Kauflandv2\Api\ShippingGroupsApi
+# Kaufland\Seller\ShippingGroupsApi
 
 All URIs are relative to */v2*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**getShippingGroups**](ShippingGroupsApi.md#getshippinggroups) | **GET** /shipping-groups | Get the list of your predefined shipping groups
 
 # **getShippingGroup**
-> \Cbdesk\Kauflandv2\Api\Model\ApiResponseShippingGroup_ getShippingGroup($id_shipping_group, $storefront)
+> \Kaufland\Seller\Model\ApiResponseShippingGroup_ getShippingGroup($id_shipping_group, $storefront)
 
 Get a shipping group by ID
 
@@ -19,13 +19,13 @@ Get a shipping group by <code>id_shipping_group</code>.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Cbdesk\Kauflandv2\Api\Api\ShippingGroupsApi(
+$apiInstance = new Kaufland\Seller\Api\ShippingGroupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $id_shipping_group = 789; // int | 
-$storefront = new \Cbdesk\Kauflandv2\Api\Model\Storefront(); // \Cbdesk\Kauflandv2\Api\Model\Storefront | Parameter to select the affected storefront
+$storefront = new \Kaufland\Seller\Model\Storefront(); // \Kaufland\Seller\Model\Storefront | Parameter to select the affected storefront
 
 try {
     $result = $apiInstance->getShippingGroup($id_shipping_group, $storefront);
@@ -41,11 +41,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id_shipping_group** | **int**|  |
- **storefront** | [**\Cbdesk\Kauflandv2\Api\Model\Storefront**](../Model/.md)| Parameter to select the affected storefront |
+ **storefront** | [**\Kaufland\Seller\Model\Storefront**](../Model/.md)| Parameter to select the affected storefront |
 
 ### Return type
 
-[**\Cbdesk\Kauflandv2\Api\Model\ApiResponseShippingGroup_**](../Model/ApiResponseShippingGroup_.md)
+[**\Kaufland\Seller\Model\ApiResponseShippingGroup_**](../Model/ApiResponseShippingGroup_.md)
 
 ### Authorization
 
@@ -59,7 +59,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getShippingGroups**
-> \Cbdesk\Kauflandv2\Api\Model\CollectionApiResponseShippingGroup_ getShippingGroups($storefront, $limit, $offset)
+> \Kaufland\Seller\Model\CollectionApiResponseShippingGroup_ getShippingGroups($storefront, $limit, $offset)
 
 Get the list of your predefined shipping groups
 
@@ -70,12 +70,12 @@ Get the list of your predefined shipping groups.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Cbdesk\Kauflandv2\Api\Api\ShippingGroupsApi(
+$apiInstance = new Kaufland\Seller\Api\ShippingGroupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$storefront = new \Cbdesk\Kauflandv2\Api\Model\Storefront(); // \Cbdesk\Kauflandv2\Api\Model\Storefront | Parameter to select the affected storefront
+$storefront = new \Kaufland\Seller\Model\Storefront(); // \Kaufland\Seller\Model\Storefront | Parameter to select the affected storefront
 $limit = 30; // int | Desired size of result set
 $offset = 0; // int | Offset applied to result set
 
@@ -92,13 +92,13 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **storefront** | [**\Cbdesk\Kauflandv2\Api\Model\Storefront**](../Model/.md)| Parameter to select the affected storefront |
+ **storefront** | [**\Kaufland\Seller\Model\Storefront**](../Model/.md)| Parameter to select the affected storefront |
  **limit** | **int**| Desired size of result set | [optional] [default to 30]
  **offset** | **int**| Offset applied to result set | [optional] [default to 0]
 
 ### Return type
 
-[**\Cbdesk\Kauflandv2\Api\Model\CollectionApiResponseShippingGroup_**](../Model/CollectionApiResponseShippingGroup_.md)
+[**\Kaufland\Seller\Model\CollectionApiResponseShippingGroup_**](../Model/CollectionApiResponseShippingGroup_.md)
 
 ### Authorization
 

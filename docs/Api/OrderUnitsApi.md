@@ -1,4 +1,4 @@
-# Cbdesk\Kauflandv2\Api\OrderUnitsApi
+# Kaufland\Seller\OrderUnitsApi
 
 All URIs are relative to */v2*
 
@@ -23,12 +23,12 @@ Cancel an order unit. Valid values for `reason` can be found in the <a href=\"ht
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Cbdesk\Kauflandv2\Api\Api\OrderUnitsApi(
+$apiInstance = new Kaufland\Seller\Api\OrderUnitsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Cbdesk\Kauflandv2\Api\Model\OrderUnitCancelRequest(); // \Cbdesk\Kauflandv2\Api\Model\OrderUnitCancelRequest | Reason of the cancellation
+$body = new \Kaufland\Seller\Model\OrderUnitCancelRequest(); // \Kaufland\Seller\Model\OrderUnitCancelRequest | Reason of the cancellation
 $id_order_unit = 789; // int | Order unit ID, unique across all order units
 
 try {
@@ -43,7 +43,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Cbdesk\Kauflandv2\Api\Model\OrderUnitCancelRequest**](../Model/OrderUnitCancelRequest.md)| Reason of the cancellation |
+ **body** | [**\Kaufland\Seller\Model\OrderUnitCancelRequest**](../Model/OrderUnitCancelRequest.md)| Reason of the cancellation |
  **id_order_unit** | **int**| Order unit ID, unique across all order units |
 
 ### Return type
@@ -73,7 +73,7 @@ Mark an order unit to be in fulfillment (It will update the order unit status to
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Cbdesk\Kauflandv2\Api\Api\OrderUnitsApi(
+$apiInstance = new Kaufland\Seller\Api\OrderUnitsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -110,7 +110,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getOrderUnit**
-> \Cbdesk\Kauflandv2\Api\Model\ApiResponseOrderUnitDetails_ getOrderUnit($id_order_unit, $embedded)
+> \Kaufland\Seller\Model\ApiResponseOrderUnitDetails_ getOrderUnit($id_order_unit, $embedded)
 
 Get an order unit by ID
 
@@ -121,13 +121,13 @@ Get an order unit by <code>id_order_unit</code>.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Cbdesk\Kauflandv2\Api\Api\OrderUnitsApi(
+$apiInstance = new Kaufland\Seller\Api\OrderUnitsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $id_order_unit = 789; // int | Order unit ID, unique across all order units
-$embedded = array(new \Cbdesk\Kauflandv2\Api\Model\OrderUnitEmbeddable()); // \Cbdesk\Kauflandv2\Api\Model\OrderUnitEmbeddable[] | Additional data to be returned
+$embedded = array(new \Kaufland\Seller\Model\OrderUnitEmbeddable()); // \Kaufland\Seller\Model\OrderUnitEmbeddable[] | Additional data to be returned
 
 try {
     $result = $apiInstance->getOrderUnit($id_order_unit, $embedded);
@@ -143,11 +143,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id_order_unit** | **int**| Order unit ID, unique across all order units |
- **embedded** | [**\Cbdesk\Kauflandv2\Api\Model\OrderUnitEmbeddable[]**](../Model/\Cbdesk\Kauflandv2\Api\Model\OrderUnitEmbeddable.md)| Additional data to be returned | [optional]
+ **embedded** | [**\Kaufland\Seller\Model\OrderUnitEmbeddable[]**](../Model/\Kaufland\Seller\Model\OrderUnitEmbeddable.md)| Additional data to be returned | [optional]
 
 ### Return type
 
-[**\Cbdesk\Kauflandv2\Api\Model\ApiResponseOrderUnitDetails_**](../Model/ApiResponseOrderUnitDetails_.md)
+[**\Kaufland\Seller\Model\ApiResponseOrderUnitDetails_**](../Model/ApiResponseOrderUnitDetails_.md)
 
 ### Authorization
 
@@ -161,7 +161,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getOrderUnits**
-> \Cbdesk\Kauflandv2\Api\Model\CollectionApiResponseOrderUnit_ getOrderUnits($storefront, $id_offer, $status, $ts_created_from_iso, $ts_updated_from_iso, $fulfillment_type, $sort, $limit, $offset)
+> \Kaufland\Seller\Model\CollectionApiResponseOrderUnit_ getOrderUnits($storefront, $id_offer, $status, $ts_created_from_iso, $ts_updated_from_iso, $fulfillment_type, $sort, $limit, $offset)
 
 Get a list of order units
 
@@ -172,17 +172,17 @@ Get a list of order units.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Cbdesk\Kauflandv2\Api\Api\OrderUnitsApi(
+$apiInstance = new Kaufland\Seller\Api\OrderUnitsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$storefront = new \Cbdesk\Kauflandv2\Api\Model\Storefront(); // \Cbdesk\Kauflandv2\Api\Model\Storefront | Locale of storefront
+$storefront = new \Kaufland\Seller\Model\Storefront(); // \Kaufland\Seller\Model\Storefront | Locale of storefront
 $id_offer = "id_offer_example"; // string | Unique ID for offer(s)
-$status = array(new \Cbdesk\Kauflandv2\Api\Model\OrderUnitStatus()); // \Cbdesk\Kauflandv2\Api\Model\OrderUnitStatus[] | Get only order units which are in the given status
+$status = array(new \Kaufland\Seller\Model\OrderUnitStatus()); // \Kaufland\Seller\Model\OrderUnitStatus[] | Get only order units which are in the given status
 $ts_created_from_iso = new \DateTime("2013-10-20T19:20:30+01:00"); // \DateTime | Get only order units which were placed after this timestamp. Should be in YYYY-MM-ddTHH:mm:ssZ format
 $ts_updated_from_iso = new \DateTime("2013-10-20T19:20:30+01:00"); // \DateTime | Get only order units which were updated after this timestamp. Should be in YYYY-MM-ddTHH:mm:ssZ format
-$fulfillment_type = array(new \Cbdesk\Kauflandv2\Api\Model\FulfillmentType()); // \Cbdesk\Kauflandv2\Api\Model\FulfillmentType[] | Get only order units which are fulfilled by the given type
+$fulfillment_type = array(new \Kaufland\Seller\Model\FulfillmentType()); // \Kaufland\Seller\Model\FulfillmentType[] | Get only order units which are fulfilled by the given type
 $sort = "ts_created:desc"; // string | Specify sorting
 $limit = 30; // int | Desired size of result set<br>max: 100, default: 30
 $offset = 0; // int | Offset applied to result set<br>default: 0
@@ -200,19 +200,19 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **storefront** | [**\Cbdesk\Kauflandv2\Api\Model\Storefront**](../Model/.md)| Locale of storefront | [optional]
+ **storefront** | [**\Kaufland\Seller\Model\Storefront**](../Model/.md)| Locale of storefront | [optional]
  **id_offer** | **string**| Unique ID for offer(s) | [optional]
- **status** | [**\Cbdesk\Kauflandv2\Api\Model\OrderUnitStatus[]**](../Model/\Cbdesk\Kauflandv2\Api\Model\OrderUnitStatus.md)| Get only order units which are in the given status | [optional]
+ **status** | [**\Kaufland\Seller\Model\OrderUnitStatus[]**](../Model/\Kaufland\Seller\Model\OrderUnitStatus.md)| Get only order units which are in the given status | [optional]
  **ts_created_from_iso** | **\DateTime**| Get only order units which were placed after this timestamp. Should be in YYYY-MM-ddTHH:mm:ssZ format | [optional]
  **ts_updated_from_iso** | **\DateTime**| Get only order units which were updated after this timestamp. Should be in YYYY-MM-ddTHH:mm:ssZ format | [optional]
- **fulfillment_type** | [**\Cbdesk\Kauflandv2\Api\Model\FulfillmentType[]**](../Model/\Cbdesk\Kauflandv2\Api\Model\FulfillmentType.md)| Get only order units which are fulfilled by the given type | [optional] [default to [&quot;fulfilled_by_merchant&quot;]]
+ **fulfillment_type** | [**\Kaufland\Seller\Model\FulfillmentType[]**](../Model/\Kaufland\Seller\Model\FulfillmentType.md)| Get only order units which are fulfilled by the given type | [optional] [default to [&quot;fulfilled_by_merchant&quot;]]
  **sort** | **string**| Specify sorting | [optional] [default to ts_created:desc]
  **limit** | **int**| Desired size of result set&lt;br&gt;max: 100, default: 30 | [optional] [default to 30]
  **offset** | **int**| Offset applied to result set&lt;br&gt;default: 0 | [optional] [default to 0]
 
 ### Return type
 
-[**\Cbdesk\Kauflandv2\Api\Model\CollectionApiResponseOrderUnit_**](../Model/CollectionApiResponseOrderUnit_.md)
+[**\Kaufland\Seller\Model\CollectionApiResponseOrderUnit_**](../Model/CollectionApiResponseOrderUnit_.md)
 
 ### Authorization
 
@@ -237,12 +237,12 @@ Send a refund to a customer for a particular order unit.<br>`amount` must be in 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Cbdesk\Kauflandv2\Api\Api\OrderUnitsApi(
+$apiInstance = new Kaufland\Seller\Api\OrderUnitsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Cbdesk\Kauflandv2\Api\Model\OrderUnitRefundRequest(); // \Cbdesk\Kauflandv2\Api\Model\OrderUnitRefundRequest | Request body containing amount and reason of the refund.
+$body = new \Kaufland\Seller\Model\OrderUnitRefundRequest(); // \Kaufland\Seller\Model\OrderUnitRefundRequest | Request body containing amount and reason of the refund.
 $id_order_unit = 789; // int | Order unit ID, unique across all order units
 
 try {
@@ -257,7 +257,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Cbdesk\Kauflandv2\Api\Model\OrderUnitRefundRequest**](../Model/OrderUnitRefundRequest.md)| Request body containing amount and reason of the refund. |
+ **body** | [**\Kaufland\Seller\Model\OrderUnitRefundRequest**](../Model/OrderUnitRefundRequest.md)| Request body containing amount and reason of the refund. |
  **id_order_unit** | **int**| Order unit ID, unique across all order units |
 
 ### Return type
@@ -287,12 +287,12 @@ Mark an order unit as sent. Valid values for `carrier_code` can be found in the 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Cbdesk\Kauflandv2\Api\Api\OrderUnitsApi(
+$apiInstance = new Kaufland\Seller\Api\OrderUnitsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Cbdesk\Kauflandv2\Api\Model\OrderUnitSendRequest(); // \Cbdesk\Kauflandv2\Api\Model\OrderUnitSendRequest | Request body containing tracking number(s) and carrier code of the shipment(s)
+$body = new \Kaufland\Seller\Model\OrderUnitSendRequest(); // \Kaufland\Seller\Model\OrderUnitSendRequest | Request body containing tracking number(s) and carrier code of the shipment(s)
 $id_order_unit = 789; // int | Order unit ID, unique across all order units
 
 try {
@@ -307,7 +307,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Cbdesk\Kauflandv2\Api\Model\OrderUnitSendRequest**](../Model/OrderUnitSendRequest.md)| Request body containing tracking number(s) and carrier code of the shipment(s) |
+ **body** | [**\Kaufland\Seller\Model\OrderUnitSendRequest**](../Model/OrderUnitSendRequest.md)| Request body containing tracking number(s) and carrier code of the shipment(s) |
  **id_order_unit** | **int**| Order unit ID, unique across all order units |
 
 ### Return type

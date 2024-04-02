@@ -1,15 +1,15 @@
-# Cbdesk\Kauflandv2\Api\StatusApi
+# Kaufland\Seller\StatusApi
 
 All URIs are relative to */v2*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**ping**](StatusApi.md#ping) | **GET** /status/ping | Ping the Kaufland.de API
+[**ping**](StatusApi.md#ping) | **GET** /status/ping | Ping the Marketplace Seller API by Kaufland
 
 # **ping**
-> \Cbdesk\Kauflandv2\Api\Model\ApiResponsePingMessage_ ping()
+> \Kaufland\Seller\Model\ApiResponsePingMessage_ ping()
 
-Ping the Kaufland.de API
+Ping the Marketplace Seller API by Kaufland
 
 A simple method you can call that will return a constant value as long as everything is good.
 
@@ -18,7 +18,7 @@ A simple method you can call that will return a constant value as long as everyt
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Cbdesk\Kauflandv2\Api\Api\StatusApi(
+$apiInstance = new Kaufland\Seller\Api\StatusApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -38,7 +38,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Cbdesk\Kauflandv2\Api\Model\ApiResponsePingMessage_**](../Model/ApiResponsePingMessage_.md)
+[**\Kaufland\Seller\Model\ApiResponsePingMessage_**](../Model/ApiResponsePingMessage_.md)
 
 ### Authorization
 
