@@ -1,4 +1,4 @@
-# Cbdesk\Kauflandv2\Api\ShipmentsApi
+# Kaufland\Seller\ShipmentsApi
 
 All URIs are relative to */v2*
 
@@ -18,12 +18,12 @@ Add a shipment to an order unit which is already marked as sent by providing a c
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Cbdesk\Kauflandv2\Api\Api\ShipmentsApi(
+$apiInstance = new Kaufland\Seller\Api\ShipmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Cbdesk\Kauflandv2\Api\Model\AddShipmentRequest(); // \Cbdesk\Kauflandv2\Api\Model\AddShipmentRequest | Request body containing information about a shipment related to an order unit
+$body = new \Kaufland\Seller\Model\AddShipmentRequest(); // \Kaufland\Seller\Model\AddShipmentRequest | Request body containing information about a shipment related to an order unit
 
 try {
     $apiInstance->addShipment($body);
@@ -37,7 +37,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Cbdesk\Kauflandv2\Api\Model\AddShipmentRequest**](../Model/AddShipmentRequest.md)| Request body containing information about a shipment related to an order unit |
+ **body** | [**\Kaufland\Seller\Model\AddShipmentRequest**](../Model/AddShipmentRequest.md)| Request body containing information about a shipment related to an order unit |
 
 ### Return type
 

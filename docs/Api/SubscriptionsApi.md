@@ -1,4 +1,4 @@
-# Cbdesk\Kauflandv2\Api\SubscriptionsApi
+# Kaufland\Seller\SubscriptionsApi
 
 All URIs are relative to */v2*
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 [**updateSubscription**](SubscriptionsApi.md#updatesubscription) | **PATCH** /subscriptions/{id_subscription} | Update subscription
 
 # **addSubscription**
-> \Cbdesk\Kauflandv2\Api\Model\ApiResponseSubscription_ addSubscription($body, $storefront)
+> \Kaufland\Seller\Model\ApiResponseSubscription_ addSubscription($body, $storefront)
 
 Subscribe for event
 
@@ -22,13 +22,13 @@ Create a new push notification subscription for an event. Using this endpoint wi
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Cbdesk\Kauflandv2\Api\Api\SubscriptionsApi(
+$apiInstance = new Kaufland\Seller\Api\SubscriptionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Cbdesk\Kauflandv2\Api\Model\PickSubscriptionCallbackUrlOrFallbackEmailOrEventName_(); // \Cbdesk\Kauflandv2\Api\Model\PickSubscriptionCallbackUrlOrFallbackEmailOrEventName_ | 
-$storefront = new \Cbdesk\Kauflandv2\Api\Model\Storefront(); // \Cbdesk\Kauflandv2\Api\Model\Storefront | Parameter to select the affected storefront
+$body = new \Kaufland\Seller\Model\PickSubscriptionCallbackUrlOrFallbackEmailOrEventName_(); // \Kaufland\Seller\Model\PickSubscriptionCallbackUrlOrFallbackEmailOrEventName_ | 
+$storefront = new \Kaufland\Seller\Model\Storefront(); // \Kaufland\Seller\Model\Storefront | Parameter to select the affected storefront
 
 try {
     $result = $apiInstance->addSubscription($body, $storefront);
@@ -43,12 +43,12 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Cbdesk\Kauflandv2\Api\Model\PickSubscriptionCallbackUrlOrFallbackEmailOrEventName_**](../Model/PickSubscriptionCallbackUrlOrFallbackEmailOrEventName_.md)|  |
- **storefront** | [**\Cbdesk\Kauflandv2\Api\Model\Storefront**](../Model/.md)| Parameter to select the affected storefront |
+ **body** | [**\Kaufland\Seller\Model\PickSubscriptionCallbackUrlOrFallbackEmailOrEventName_**](../Model/PickSubscriptionCallbackUrlOrFallbackEmailOrEventName_.md)|  |
+ **storefront** | [**\Kaufland\Seller\Model\Storefront**](../Model/.md)| Parameter to select the affected storefront |
 
 ### Return type
 
-[**\Cbdesk\Kauflandv2\Api\Model\ApiResponseSubscription_**](../Model/ApiResponseSubscription_.md)
+[**\Kaufland\Seller\Model\ApiResponseSubscription_**](../Model/ApiResponseSubscription_.md)
 
 ### Authorization
 
@@ -73,12 +73,12 @@ Deletes the specified push notification subscription from the database. To re-su
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Cbdesk\Kauflandv2\Api\Api\SubscriptionsApi(
+$apiInstance = new Kaufland\Seller\Api\SubscriptionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$id_subscription = new \Cbdesk\Kauflandv2\Api\Model\LongInteger(); // \Cbdesk\Kauflandv2\Api\Model\LongInteger | 
+$id_subscription = new \Kaufland\Seller\Model\LongInteger(); // \Kaufland\Seller\Model\LongInteger | 
 
 try {
     $apiInstance->deleteSubscription($id_subscription);
@@ -92,7 +92,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id_subscription** | [**\Cbdesk\Kauflandv2\Api\Model\LongInteger**](../Model/.md)|  |
+ **id_subscription** | [**\Kaufland\Seller\Model\LongInteger**](../Model/.md)|  |
 
 ### Return type
 
@@ -110,7 +110,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getSubscription**
-> \Cbdesk\Kauflandv2\Api\Model\ApiResponseSubscription_ getSubscription($id_subscription)
+> \Kaufland\Seller\Model\ApiResponseSubscription_ getSubscription($id_subscription)
 
 Get a push notification subscription by ID
 
@@ -121,12 +121,12 @@ Get a push notification subscription by <code>id_subscription</code>.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Cbdesk\Kauflandv2\Api\Api\SubscriptionsApi(
+$apiInstance = new Kaufland\Seller\Api\SubscriptionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$id_subscription = new \Cbdesk\Kauflandv2\Api\Model\LongInteger(); // \Cbdesk\Kauflandv2\Api\Model\LongInteger | 
+$id_subscription = new \Kaufland\Seller\Model\LongInteger(); // \Kaufland\Seller\Model\LongInteger | 
 
 try {
     $result = $apiInstance->getSubscription($id_subscription);
@@ -141,11 +141,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id_subscription** | [**\Cbdesk\Kauflandv2\Api\Model\LongInteger**](../Model/.md)|  |
+ **id_subscription** | [**\Kaufland\Seller\Model\LongInteger**](../Model/.md)|  |
 
 ### Return type
 
-[**\Cbdesk\Kauflandv2\Api\Model\ApiResponseSubscription_**](../Model/ApiResponseSubscription_.md)
+[**\Kaufland\Seller\Model\ApiResponseSubscription_**](../Model/ApiResponseSubscription_.md)
 
 ### Authorization
 
@@ -159,7 +159,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getSubscriptions**
-> \Cbdesk\Kauflandv2\Api\Model\CollectionApiResponseSubscription_ getSubscriptions($storefront, $event_name, $limit, $offset)
+> \Kaufland\Seller\Model\CollectionApiResponseSubscription_ getSubscriptions($storefront, $event_name, $limit, $offset)
 
 Get a list of your push notification subscriptions
 
@@ -170,13 +170,13 @@ Get a list of your push notification subscriptions.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Cbdesk\Kauflandv2\Api\Api\SubscriptionsApi(
+$apiInstance = new Kaufland\Seller\Api\SubscriptionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$storefront = new \Cbdesk\Kauflandv2\Api\Model\Storefront(); // \Cbdesk\Kauflandv2\Api\Model\Storefront | Parameter to select the affected storefront
-$event_name = new \Cbdesk\Kauflandv2\Api\Model\SubscriptionEventName(); // \Cbdesk\Kauflandv2\Api\Model\SubscriptionEventName | Event name
+$storefront = new \Kaufland\Seller\Model\Storefront(); // \Kaufland\Seller\Model\Storefront | Parameter to select the affected storefront
+$event_name = new \Kaufland\Seller\Model\SubscriptionEventName(); // \Kaufland\Seller\Model\SubscriptionEventName | Event name
 $limit = 30; // int | Desired size of result set
 $offset = 0; // int | Offset applied to result set
 
@@ -193,14 +193,14 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **storefront** | [**\Cbdesk\Kauflandv2\Api\Model\Storefront**](../Model/.md)| Parameter to select the affected storefront | [optional]
- **event_name** | [**\Cbdesk\Kauflandv2\Api\Model\SubscriptionEventName**](../Model/.md)| Event name | [optional]
+ **storefront** | [**\Kaufland\Seller\Model\Storefront**](../Model/.md)| Parameter to select the affected storefront | [optional]
+ **event_name** | [**\Kaufland\Seller\Model\SubscriptionEventName**](../Model/.md)| Event name | [optional]
  **limit** | **int**| Desired size of result set | [optional] [default to 30]
  **offset** | **int**| Offset applied to result set | [optional] [default to 0]
 
 ### Return type
 
-[**\Cbdesk\Kauflandv2\Api\Model\CollectionApiResponseSubscription_**](../Model/CollectionApiResponseSubscription_.md)
+[**\Kaufland\Seller\Model\CollectionApiResponseSubscription_**](../Model/CollectionApiResponseSubscription_.md)
 
 ### Authorization
 
@@ -214,7 +214,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateSubscription**
-> \Cbdesk\Kauflandv2\Api\Model\ApiResponseSubscription_ updateSubscription($body, $id_subscription)
+> \Kaufland\Seller\Model\ApiResponseSubscription_ updateSubscription($body, $id_subscription)
 
 Update subscription
 
@@ -225,13 +225,13 @@ Update the fields of a push notification subscription. You can set the is_active
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Cbdesk\Kauflandv2\Api\Api\SubscriptionsApi(
+$apiInstance = new Kaufland\Seller\Api\SubscriptionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Cbdesk\Kauflandv2\Api\Model\PartialPickSubscriptionCallbackUrlOrFallbackEmailOrEventNameOrIsActiveOrStorefront_(); // \Cbdesk\Kauflandv2\Api\Model\PartialPickSubscriptionCallbackUrlOrFallbackEmailOrEventNameOrIsActiveOrStorefront_ | 
-$id_subscription = new \Cbdesk\Kauflandv2\Api\Model\LongInteger(); // \Cbdesk\Kauflandv2\Api\Model\LongInteger | 
+$body = new \Kaufland\Seller\Model\PartialPickSubscriptionCallbackUrlOrFallbackEmailOrEventNameOrIsActiveOrStorefront_(); // \Kaufland\Seller\Model\PartialPickSubscriptionCallbackUrlOrFallbackEmailOrEventNameOrIsActiveOrStorefront_ | 
+$id_subscription = new \Kaufland\Seller\Model\LongInteger(); // \Kaufland\Seller\Model\LongInteger | 
 
 try {
     $result = $apiInstance->updateSubscription($body, $id_subscription);
@@ -246,12 +246,12 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Cbdesk\Kauflandv2\Api\Model\PartialPickSubscriptionCallbackUrlOrFallbackEmailOrEventNameOrIsActiveOrStorefront_**](../Model/PartialPickSubscriptionCallbackUrlOrFallbackEmailOrEventNameOrIsActiveOrStorefront_.md)|  |
- **id_subscription** | [**\Cbdesk\Kauflandv2\Api\Model\LongInteger**](../Model/.md)|  |
+ **body** | [**\Kaufland\Seller\Model\PartialPickSubscriptionCallbackUrlOrFallbackEmailOrEventNameOrIsActiveOrStorefront_**](../Model/PartialPickSubscriptionCallbackUrlOrFallbackEmailOrEventNameOrIsActiveOrStorefront_.md)|  |
+ **id_subscription** | [**\Kaufland\Seller\Model\LongInteger**](../Model/.md)|  |
 
 ### Return type
 
-[**\Cbdesk\Kauflandv2\Api\Model\ApiResponseSubscription_**](../Model/ApiResponseSubscription_.md)
+[**\Kaufland\Seller\Model\ApiResponseSubscription_**](../Model/ApiResponseSubscription_.md)
 
 ### Authorization
 

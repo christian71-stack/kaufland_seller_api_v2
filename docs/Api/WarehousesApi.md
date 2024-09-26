@@ -1,4 +1,4 @@
-# Cbdesk\Kauflandv2\Api\WarehousesApi
+# Kaufland\Seller\WarehousesApi
 
 All URIs are relative to */v2*
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 [**updateWarehouse**](WarehousesApi.md#updatewarehouse) | **PUT** /warehouses/{id_warehouse} | Update a Warehouse
 
 # **createWarehouse**
-> \Cbdesk\Kauflandv2\Api\Model\ApiResponseWarehouse_ createWarehouse($body)
+> \Kaufland\Seller\Model\ApiResponseWarehouse_ createWarehouse($body)
 
 Create a new Warehouse
 
@@ -22,12 +22,12 @@ Create a new warehouse.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Cbdesk\Kauflandv2\Api\Api\WarehousesApi(
+$apiInstance = new Kaufland\Seller\Api\WarehousesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Cbdesk\Kauflandv2\Api\Model\WarehouseBodyRequest(); // \Cbdesk\Kauflandv2\Api\Model\WarehouseBodyRequest | Information about the warehouse that will be generated
+$body = new \Kaufland\Seller\Model\WarehouseBodyRequest(); // \Kaufland\Seller\Model\WarehouseBodyRequest | Information about the warehouse that will be generated
 
 try {
     $result = $apiInstance->createWarehouse($body);
@@ -42,11 +42,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Cbdesk\Kauflandv2\Api\Model\WarehouseBodyRequest**](../Model/WarehouseBodyRequest.md)| Information about the warehouse that will be generated |
+ **body** | [**\Kaufland\Seller\Model\WarehouseBodyRequest**](../Model/WarehouseBodyRequest.md)| Information about the warehouse that will be generated |
 
 ### Return type
 
-[**\Cbdesk\Kauflandv2\Api\Model\ApiResponseWarehouse_**](../Model/ApiResponseWarehouse_.md)
+[**\Kaufland\Seller\Model\ApiResponseWarehouse_**](../Model/ApiResponseWarehouse_.md)
 
 ### Authorization
 
@@ -71,7 +71,7 @@ Delete a warehouse.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Cbdesk\Kauflandv2\Api\Api\WarehousesApi(
+$apiInstance = new Kaufland\Seller\Api\WarehousesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -108,7 +108,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getWarehouse**
-> \Cbdesk\Kauflandv2\Api\Model\ApiResponseWarehouse_ getWarehouse($id_warehouse)
+> \Kaufland\Seller\Model\ApiResponseWarehouse_ getWarehouse($id_warehouse)
 
 Get a warehouse by its ID
 
@@ -119,7 +119,7 @@ Gets a warehouse by <code>id_warehouse</code>.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Cbdesk\Kauflandv2\Api\Api\WarehousesApi(
+$apiInstance = new Kaufland\Seller\Api\WarehousesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -143,7 +143,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Cbdesk\Kauflandv2\Api\Model\ApiResponseWarehouse_**](../Model/ApiResponseWarehouse_.md)
+[**\Kaufland\Seller\Model\ApiResponseWarehouse_**](../Model/ApiResponseWarehouse_.md)
 
 ### Authorization
 
@@ -157,7 +157,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getWarehouses**
-> \Cbdesk\Kauflandv2\Api\Model\CollectionApiResponseWarehouse_ getWarehouses($limit, $offset)
+> \Kaufland\Seller\Model\CollectionApiResponseWarehouse_ getWarehouses($limit, $offset)
 
 Get a list of your Warehouses
 
@@ -168,7 +168,7 @@ Get a list of your warehouses.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Cbdesk\Kauflandv2\Api\Api\WarehousesApi(
+$apiInstance = new Kaufland\Seller\Api\WarehousesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -194,7 +194,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Cbdesk\Kauflandv2\Api\Model\CollectionApiResponseWarehouse_**](../Model/CollectionApiResponseWarehouse_.md)
+[**\Kaufland\Seller\Model\CollectionApiResponseWarehouse_**](../Model/CollectionApiResponseWarehouse_.md)
 
 ### Authorization
 
@@ -208,7 +208,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateWarehouse**
-> \Cbdesk\Kauflandv2\Api\Model\ApiResponseWarehouse_ updateWarehouse($body, $id_warehouse)
+> \Kaufland\Seller\Model\ApiResponseWarehouse_ updateWarehouse($body, $id_warehouse)
 
 Update a Warehouse
 
@@ -219,12 +219,12 @@ Update a warehouse.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Cbdesk\Kauflandv2\Api\Api\WarehousesApi(
+$apiInstance = new Kaufland\Seller\Api\WarehousesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Cbdesk\Kauflandv2\Api\Model\WarehouseBodyRequest(); // \Cbdesk\Kauflandv2\Api\Model\WarehouseBodyRequest | Update Object
+$body = new \Kaufland\Seller\Model\WarehouseBodyRequest(); // \Kaufland\Seller\Model\WarehouseBodyRequest | Update Object
 $id_warehouse = 789; // int | Internal ID of Warehouse, unique across all Warehouses
 
 try {
@@ -240,12 +240,12 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Cbdesk\Kauflandv2\Api\Model\WarehouseBodyRequest**](../Model/WarehouseBodyRequest.md)| Update Object |
+ **body** | [**\Kaufland\Seller\Model\WarehouseBodyRequest**](../Model/WarehouseBodyRequest.md)| Update Object |
  **id_warehouse** | **int**| Internal ID of Warehouse, unique across all Warehouses |
 
 ### Return type
 
-[**\Cbdesk\Kauflandv2\Api\Model\ApiResponseWarehouse_**](../Model/ApiResponseWarehouse_.md)
+[**\Kaufland\Seller\Model\ApiResponseWarehouse_**](../Model/ApiResponseWarehouse_.md)
 
 ### Authorization
 

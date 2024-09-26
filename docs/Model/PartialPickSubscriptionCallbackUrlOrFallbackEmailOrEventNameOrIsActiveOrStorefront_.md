@@ -5,7 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **callback_url** | **string** |  | [optional] 
 **fallback_email** | **string** |  | [optional] 
-**event_name** | [**\Cbdesk\Kauflandv2\Api\Model\SubscriptionEventName**](SubscriptionEventName.md) |  | [optional] 
+**event_name** | [**\Kaufland\Seller\Model\SubscriptionEventName**](SubscriptionEventName.md) |  | [optional] 
 **is_active** | **bool** |  | [optional] 
 **storefront** | **string** |  | [optional] 
 

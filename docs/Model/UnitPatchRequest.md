@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**status** | [**\Cbdesk\Kauflandv2\Api\Model\WriteableUnitStatuses**](WriteableUnitStatuses.md) |  | [optional] 
+**status** | [**\Kaufland\Seller\Model\WriteableUnitStatuses**](WriteableUnitStatuses.md) |  | [optional] 
 **amount** | **int** | Amount of available Units | [optional] 
 **handling_time** | **int** | handling time | [optional] 
 **listing_price** | **int** | Listing price, in integral cents of the storefront&#x27;s currency (CZK for cz, EUR for de, sk). Minimum 1 cent, maximum differs by storefront (1 million EUR or 25 million CZK). | [optional] 

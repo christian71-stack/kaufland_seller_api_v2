@@ -3,9 +3,9 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**status** | [**\Cbdesk\Kauflandv2\Api\Model\UnitStatuses**](UnitStatuses.md) |  | 
-**currency** | [**\Cbdesk\Kauflandv2\Api\Model\Currency**](Currency.md) |  | 
-**condition** | [**\Cbdesk\Kauflandv2\Api\Model\UnitCondition**](UnitCondition.md) |  | 
+**status** | [**\Kaufland\Seller\Model\UnitStatuses**](UnitStatuses.md) |  | 
+**currency** | [**\Kaufland\Seller\Model\Currency**](Currency.md) |  | 
+**condition** | [**\Kaufland\Seller\Model\UnitCondition**](UnitCondition.md) |  | 
 **id_unit** | **int** | Internal ID of Unit, unique across all Units | 
 **note** | **string** | A note for this unit | 
 **listing_price** | **int** | Listing price, available only for Seller | 
@@ -20,11 +20,11 @@ Name | Type | Description | Notes
 **date_lastchange_iso** | [**\DateTime**](\DateTime.md) | DateTime when unit has been edited for the last time | 
 **handling_time** | **int** | handling time | 
 **shipping_rate** | **int** |  | 
-**storefront** | [**\Cbdesk\Kauflandv2\Api\Model\Storefront**](Storefront.md) |  | 
+**storefront** | [**\Kaufland\Seller\Model\Storefront**](Storefront.md) |  | 
 **transport_time_min** | **int** | Transport time minimum | 
 **transport_time_max** | **int** | Transport time maximum | 
-**product** | [**\Cbdesk\Kauflandv2\Api\Model\Product**](Product.md) |  | [optional] 
-**fulfillment_type** | [**\Cbdesk\Kauflandv2\Api\Model\FulfillmentType**](FulfillmentType.md) |  | 
+**product** | [**\Kaufland\Seller\Model\Product**](Product.md) |  | [optional] 
+**fulfillment_type** | [**\Kaufland\Seller\Model\FulfillmentType**](FulfillmentType.md) |  | 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 

@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id_product** | **int** |  | 
-**storefront** | [**\Cbdesk\Kauflandv2\Api\Model\Storefront**](Storefront.md) |  | 
+**storefront** | [**\Kaufland\Seller\Model\Storefront**](Storefront.md) |  | 
 **title** | **string** |  | 
 **eans** | **string[]** |  | 
 **id_category** | **int** |  | 
